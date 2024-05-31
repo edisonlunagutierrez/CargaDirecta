@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application' // Aplica el plugin para construir una aplicación Android
+
+android {
+    compileSdkVersion 29 // Versión de compilación del SDK de Android
+    defaultConfig {
+        applicationId "com.optic.uberclone" // ID de la aplicación
+        minSdkVersion 21 // Versión mínima del SDK requerida
+        targetSdkVersion 29 // Versión del SDK a la que se dirige la aplicación
+        versionCode 1 // Código de versión de la aplicación
+        versionName "1.0" // Nombre de la versión de la aplicación
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner" // Corredor de instrumentación de pruebas
+    }
+    buildTypes {
+        release {
+            minifyEnabled false // Desactiva la minificación del código en la versión de lanzamiento
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro' // Archivos de configuración de ProGuard para la versión de lanzamiento
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar']) // Implementación de archivos JAR ubicados en la carpeta 'libs'
+    implementation 'androidx.appcompat:appcompat:1.1.0' // Implementación de la biblioteca de compatibilidad de AndroidX
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3' // Implementación de la biblioteca ConstraintLayout
+    implementation 'com.google.android.material:material:1.0.0' // Implementación de la biblioteca Material Design
+    implementation 'com.google.firebase:firebase-analytics:17.2.0' // Implementación de Firebase Analytics
+    //implementation 'com.google.firebase:firebase-auth:19.1.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0' // Implementación de Firebase Authentication
+    implementation 'com.google.firebase:firebase-database:19.1.0' // Implementación de Firebase Realtime Database
+
+    implementation 'com.google.android.gms:play-services-maps:16.1.0' // Implementación de Google Play Services Maps
+    implementation 'com.google.android.gms:play-services-location:16.0.0' // Implementación de Google Play Services Location
+    implementation 'com.firebase:geofire-android:2.2.0' // Implementación de GeoFire para Firebase
+    implementation "com.google.android.libraries.places:places:1.1.0" // Implementación de Places SDK for Android
+    implementation 'com.google.maps.android:android-maps-utils:0.5' // Implementación de Android Maps Utils
+
+    implementation 'com.google.firebase:firebase-messaging:20.1.0' // Implementación de Firebase Cloud Messaging
+
+    // Dependencias para trazar la ruta en el mapa utilizando la API de Google
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    implementation 'com.github.d-max:spots-dialog:1.1@aar' // Implementación de una biblioteca de diálogos
+    //implementation 'com.airbnb.android:lottie:2.8.0'
+    implementation 'com.airbnb.android:lottie:3.4.0' // Implementación de Lottie para animaciones
+
+    implementation 'com.google.firebase:firebase-storage:19.1.1' // Implementación de Firebase Storage
+    implementation 'id.zelory:compressor:2.1.0' // Implementación de una biblioteca de compresión de imágenes
+
+    implementation 'com.squareup.picasso:picasso:2.5.2' // Implementación de Picasso para cargar imágenes
+    //implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0' // Implementación de FirebaseUI para la base de datos
+    implementation 'com.github.florent37:shapeofview:1.3.2' // Implementación de ShapeOfView
+    implementation 'de.hdodenhof:circleimageview:3.1.0' // Implementación de CircleImageView
+
+    testImplementation 'junit:junit:4.12' // Implementación de JUnit para pruebas unitarias
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1' // Implementación de JUnit para pruebas de instrumentación
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0' // Implementación de Espresso para pruebas de interfaz de usuario
+}
+
+apply plugin: 'com.google.gms.google-services' // Aplica el plugin para los servicios de Google

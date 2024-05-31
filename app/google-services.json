@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "565516799953" (Cambiar por el JSON de firebase),
+    "firebase_url": "https://cargadirecta-416121-default-rtdb.firebaseio.com"(Cambiar por el JSON de firebase),
+    "project_id": "cargadirecta-416121"(Cambiar por el JSON de firebase),
+    "storage_bucket": "cargadirecta-416121.appspot.com"(Cambiar por el JSON de firebase)
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565516799953:android:4f2b81747406d8ef1edaf0"(Cambiar por el JSON de firebase),
+        "android_client_info": {
+          "package_name": "com.optic.uberclone"(Cambiar por el JSON de firebase)
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "(PONER LA APIKEY A QUI O CAMBIAR EL JSON QUE ESTA EN FIREBASE, EN - CONFIGURACION DEL PROYECTO - TUS APPS)"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

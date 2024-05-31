@@ -1,0 +1,417 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.optic.uberclone"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:8:5-68
+13-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:8:22-65
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:9:5-80
+14-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:9:22-77
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+15-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:10:5-76
+15-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:10:22-73
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:25:5-79
+17-->[com.google.firebase:firebase-database:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:25:22-76
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\affda68f75cbf2d2c6df4dc20857d083\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\affda68f75cbf2d2c6df4dc20857d083\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
+21        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\affda68f75cbf2d2c6df4dc20857d083\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+22-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+23    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+23-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:26:5-110
+23-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:26:22-107
+24
+25    <application
+25-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:11:5-79:19
+26        android:allowBackup="true"
+26-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:12:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\290377ef3f04af0b2bf13aa0b54ad202\core-1.1.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:13:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:14:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:15:9-54
+32        android:supportsRtl="true"
+32-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:16:9-35
+33        android:testOnly="true"
+34        android:theme="@style/AppTheme" >
+34-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:17:9-40
+35        <activity android:name="com.optic.uberclone.activities.driver.HistoryBookingDetailDriverActivity" />
+35-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:19:9-90
+35-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:19:19-87
+36        <activity android:name="com.optic.uberclone.activities.client.HistoryBookingDetailClientActivity" />
+36-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:20:9-90
+36-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:20:19-87
+37        <activity
+37-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:21:9-23:81
+38            android:name="com.optic.uberclone.activities.driver.HistoryBookingDriverActivity"
+38-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:22:13-75
+39            android:parentActivityName="com.optic.uberclone.activities.driver.MapDriverActivity" />
+39-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:23:13-78
+40        <activity
+40-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:24:9-26:81
+41            android:name="com.optic.uberclone.activities.client.HistoryBookingClientActivity"
+41-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:25:13-75
+42            android:parentActivityName="com.optic.uberclone.activities.client.MapClientActivity" />
+42-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:26:13-78
+43        <activity
+43-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:27:9-29:81
+44            android:name="com.optic.uberclone.activities.driver.UpdateProfileDriverActivity"
+44-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:28:13-74
+45            android:parentActivityName="com.optic.uberclone.activities.driver.MapDriverActivity" />
+45-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:29:13-78
+46        <activity
+46-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:30:9-32:81
+47            android:name="com.optic.uberclone.activities.client.UpdateProfileActivity"
+47-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:31:13-68
+48            android:parentActivityName="com.optic.uberclone.activities.client.MapClientActivity" />
+48-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:32:13-78
+49        <activity android:name="com.optic.uberclone.activities.driver.NotificationBookingActivity" />
+49-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:33:9-83
+49-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:33:19-80
+50        <activity android:name="com.optic.uberclone.activities.client.CalificationDriverActivity" />
+50-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:34:9-82
+50-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:34:19-79
+51        <activity android:name="com.optic.uberclone.activities.driver.CalificationClientActivity" />
+51-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:35:9-82
+51-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:35:19-79
+52        <activity android:name="com.optic.uberclone.activities.driver.MapDriverBookingActivity" />
+52-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:36:9-80
+52-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:36:19-77
+53        <activity android:name="com.optic.uberclone.activities.client.MapClientBookingActivity" />
+53-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:37:9-80
+53-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:37:19-77
+54
+55        <receiver
+55-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:39:9-41:38
+56            android:name="com.optic.uberclone.receivers.AcceptReceiver"
+56-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:40:13-53
+57            android:enabled="true" />
+57-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:41:13-35
+58        <receiver
+58-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:42:9-44:38
+59            android:name="com.optic.uberclone.receivers.CancelReceiver"
+59-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:43:13-53
+60            android:enabled="true" />
+60-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:44:13-35
+61
+62        <service android:name="com.optic.uberclone.services.MyFirebaseMessagingClient" >
+62-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:46:9-50:19
+62-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:46:18-68
+63            <intent-filter>
+63-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:47:13-49:29
+64                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+64-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:48:17-78
+64-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:48:25-75
+65            </intent-filter>
+66        </service>
+67
+68        <activity android:name="com.optic.uberclone.activities.client.RequestDriverActivity" />
+68-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:52:9-77
+68-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:52:19-74
+69        <activity
+69-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:53:9-55:81
+70            android:name="com.optic.uberclone.activities.client.DetailRequestActivity"
+70-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:54:13-68
+71            android:parentActivityName="com.optic.uberclone.activities.client.MapClientActivity" />
+71-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:55:13-78
+72        <activity android:name="com.optic.uberclone.activities.driver.MapDriverActivity" />
+72-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:56:9-73
+72-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:56:19-70
+73        <activity android:name="com.optic.uberclone.activities.client.MapClientActivity" />
+73-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:57:9-73
+73-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:57:19-70
+74        <activity android:name="com.optic.uberclone.activities.driver.RegisterDriverActivity" />
+74-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:58:9-78
+74-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:58:19-75
+75        <activity
+75-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:59:9-61:81
+76            android:name="com.optic.uberclone.activities.LoginActivity"
+76-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:60:13-53
+77            android:parentActivityName="com.optic.uberclone.activities.SelectOptionAuthActivity" />
+77-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:61:13-78
+78        <activity
+78-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:62:9-64:81
+79            android:name="com.optic.uberclone.activities.client.RegisterActivity"
+79-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:63:13-63
+80            android:parentActivityName="com.optic.uberclone.activities.SelectOptionAuthActivity" />
+80-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:64:13-78
+81        <activity
+81-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:65:9-67:69
+82            android:name="com.optic.uberclone.activities.SelectOptionAuthActivity"
+82-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:66:13-64
+83            android:parentActivityName="com.optic.uberclone.activities.MainActivity" />
+83-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:67:13-66
+84        <activity android:name="com.optic.uberclone.activities.MainActivity" >
+84-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:68:9-74:20
+84-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:68:19-58
+85            <intent-filter>
+85-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:69:13-73:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:70:17-69
+86-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:70:25-66
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:72:17-77
+88-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:72:27-74
+89            </intent-filter>
+90        </activity>
+91
+92        <meta-data
+92-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:76:9-78:55
+93            android:name="com.google.android.geo.API_KEY"
+93-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:77:13-58
+94            android:value="@string/google_maps_key" />
+94-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:78:13-52
+95        <!-- Autocomplete -->
+96        <activity
+96-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:16:9-23:20
+97            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+97-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:17:13-91
+98            android:exported="false"
+98-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:18:13-37
+99            android:hardwareAccelerated="true"
+99-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:19:13-47
+100            android:label="@string/places_autocomplete_label"
+100-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:20:13-62
+101            android:theme="@style/PlacesAutocompleteThemeOverlay"
+101-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:21:13-66
+102            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+102-->[com.google.android.libraries.places:places:1.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\7de9a4529e1dc6dbea6fc0c8d844fdf7\jetified-places-1.1.0\AndroidManifest.xml:22:13-71
+103        </activity>
+104        <activity
+104-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+105            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+105-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+106            android:excludeFromRecents="true"
+106-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+107            android:exported="true"
+107-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+108            android:launchMode="singleTask"
+108-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+109            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+109-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+110-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+111
+112        <service
+112-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+113            android:name="com.google.firebase.components.ComponentDiscoveryService"
+113-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+114            android:directBootAware="true"
+114-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\d4f73e1251ce082ea22accdd98d5b06b\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+115            android:exported="false" >
+115-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
+116            <meta-data
+116-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+117                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+117-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\db9fd4181921fcb933d270f5edbcb02d\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-database:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+120                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+120-->[com.google.firebase:firebase-database:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-database:19.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\f10127e9d8318f4d4750b9e91ab15d15\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\60a6e5f3033425ab9bfe9ce67f1648d4\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+123                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+123-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\60a6e5f3033425ab9bfe9ce67f1648d4\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\60a6e5f3033425ab9bfe9ce67f1648d4\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\4ffcc55520fe3c8af3a0c0ae59a01f2a\firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+126                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+126-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\4ffcc55520fe3c8af3a0c0ae59a01f2a\firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\4ffcc55520fe3c8af3a0c0ae59a01f2a\firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+128            <meta-data
+128-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\1ae8fcb846c0e3131b3e9b422fa55563\play-services-measurement-api-17.2.0\AndroidManifest.xml:30:13-32:85
+129                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+129-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\1ae8fcb846c0e3131b3e9b422fa55563\play-services-measurement-api-17.2.0\AndroidManifest.xml:31:17-139
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\1ae8fcb846c0e3131b3e9b422fa55563\play-services-measurement-api-17.2.0\AndroidManifest.xml:32:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+132                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+132-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\4fe398d7df0ecdf7c387486ba8982c49\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+135                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+135-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\4fe398d7df0ecdf7c387486ba8982c49\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\4fe398d7df0ecdf7c387486ba8982c49\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+137        </service> <!-- Needs to be explicitly declared on P+ -->
+138        <uses-library
+138-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\affda68f75cbf2d2c6df4dc20857d083\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+139            android:name="org.apache.http.legacy"
+139-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\affda68f75cbf2d2c6df4dc20857d083\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+140            android:required="false" />
+140-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\affda68f75cbf2d2c6df4dc20857d083\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+141
+142        <meta-data
+142-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\314cb24daf776c5de7fe839d42501c0c\jetified-android-maps-utils-0.5\AndroidManifest.xml:8:9-10:69
+143            android:name="com.google.android.gms.version"
+143-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\314cb24daf776c5de7fe839d42501c0c\jetified-android-maps-utils-0.5\AndroidManifest.xml:9:13-58
+144            android:value="@integer/google_play_services_version" />
+144-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\314cb24daf776c5de7fe839d42501c0c\jetified-android-maps-utils-0.5\AndroidManifest.xml:10:13-66
+145        <!--
+146             FirebaseMessagingService performs security checks at runtime,
+147             but set to not exported to explicitly avoid allowing another app to call it.
+148        -->
+149        <service
+149-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\60a6e5f3033425ab9bfe9ce67f1648d4\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+150            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+150-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\60a6e5f3033425ab9bfe9ce67f1648d4\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+151            android:exported="false" >
+151-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\60a6e5f3033425ab9bfe9ce67f1648d4\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+152            <intent-filter android:priority="-500" >
+152-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:47:13-49:29
+153                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+153-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:48:17-78
+153-->C:\Users\SR MOON\Downloads\CargaDirecta_2024\CargaDirecta_2024\CargaDirecta_2024\app\src\main\AndroidManifest.xml:48:25-75
+154            </intent-filter>
+155        </service>
+156
+157        <receiver
+157-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+158            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+158-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+159            android:exported="true"
+159-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+160            android:permission="com.google.android.c2dm.permission.SEND" >
+160-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+161            <intent-filter>
+161-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+162                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+162-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+162-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\00e6f73d9a8f707bb8476616450e11cd\firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+163            </intent-filter>
+164        </receiver>
+165
+166        <activity
+166-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+167-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+169-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\fc9a8d5df99331dac9a5fdc49a7080c6\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+170
+171        <receiver
+171-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:29:9-33:20
+172            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+172-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:30:13-85
+173            android:enabled="true"
+173-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:31:13-35
+174            android:exported="false" >
+174-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:32:13-37
+175        </receiver>
+176        <receiver
+176-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:34:9-42:20
+177            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+177-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:35:13-100
+178            android:enabled="true"
+178-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:36:13-35
+179            android:exported="true"
+179-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:37:13-36
+180            android:permission="android.permission.INSTALL_PACKAGES" >
+180-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:38:13-69
+181            <intent-filter>
+181-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:39:13-41:29
+182                <action android:name="com.android.vending.INSTALL_REFERRER" />
+182-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:40:17-79
+182-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:40:25-76
+183            </intent-filter>
+184        </receiver>
+185
+186        <service
+186-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:44:9-47:40
+187            android:name="com.google.android.gms.measurement.AppMeasurementService"
+187-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:45:13-84
+188            android:enabled="true"
+188-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:46:13-35
+189            android:exported="false" />
+189-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:47:13-37
+190        <service
+190-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:48:9-52:72
+191            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+191-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:49:13-87
+192            android:enabled="true"
+192-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:50:13-35
+193            android:exported="false"
+193-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:51:13-37
+194            android:permission="android.permission.BIND_JOB_SERVICE" />
+194-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\dc7946cb0a16efc7a30c1935709dc083\play-services-measurement-17.2.0\AndroidManifest.xml:52:13-69
+195
+196        <provider
+196-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\d4f73e1251ce082ea22accdd98d5b06b\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+197            android:name="com.google.firebase.provider.FirebaseInitProvider"
+197-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\d4f73e1251ce082ea22accdd98d5b06b\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+198            android:authorities="com.optic.uberclone.firebaseinitprovider"
+198-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\d4f73e1251ce082ea22accdd98d5b06b\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+199            android:exported="false"
+199-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\d4f73e1251ce082ea22accdd98d5b06b\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+200            android:initOrder="100" />
+200-->[com.google.firebase:firebase-common:19.3.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\d4f73e1251ce082ea22accdd98d5b06b\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+201
+202        <service
+202-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\597475d33933afb186bcef631c12db1c\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+203            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+203-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\597475d33933afb186bcef631c12db1c\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+204            android:exported="false" >
+204-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\597475d33933afb186bcef631c12db1c\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+205            <meta-data
+205-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\597475d33933afb186bcef631c12db1c\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+206                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+206-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\597475d33933afb186bcef631c12db1c\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+207                android:value="cct" />
+207-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\597475d33933afb186bcef631c12db1c\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+208        </service>
+209        <service
+209-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\837c8913635cfdf2f26599ed0e8f788a\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+210            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+210-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\837c8913635cfdf2f26599ed0e8f788a\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+211            android:exported="false"
+211-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\837c8913635cfdf2f26599ed0e8f788a\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+212            android:permission="android.permission.BIND_JOB_SERVICE" >
+212-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\837c8913635cfdf2f26599ed0e8f788a\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+213        </service>
+214
+215        <receiver
+215-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\837c8913635cfdf2f26599ed0e8f788a\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+216            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+216-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\837c8913635cfdf2f26599ed0e8f788a\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+217            android:exported="false" />
+217-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\SR MOON\.gradle\caches\transforms-2\files-2.1\837c8913635cfdf2f26599ed0e8f788a\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+218    </application>
+219
+220</manifest>
